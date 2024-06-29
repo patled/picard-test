@@ -1,35 +1,36 @@
 import { useState } from 'react'
-import './App.css'
+import styles from './App.module.css'
 
 function App() {
-  const [backgroundColor, setBackgroundColor] = useState('transparent')
+  const [color, setColor] = useState('black')
 
   function changeColor() {
     //change color for div
-    switch (backgroundColor) {
-      case 'transparent':
-        setBackgroundColor('red')
+    switch (color) {
+      case 'black':
+        setColor('red')
         break
       case 'red':
-        setBackgroundColor('blue')
+        setColor('blue')
         break
       case 'blue':
-        setBackgroundColor('green')
+        setColor('green')
         break
       case 'green':
-        setBackgroundColor('transparent')
+        setColor('black')
         break
       default:
-        setBackgroundColor('transparent')
+        setColor('black')
     }
 
   }
 
   return (
-    <>
+
+    <div className={styles.container}>
       <button onClick={() => changeColor()}>change</button>
-      <div style={{ backgroundColor: backgroundColor }}> Hello from the other side </div>
-    </>
+      <div className={styles.text} style={{ color: color }}> Hello from the other side </div>
+      </div>
   )
 }
 
