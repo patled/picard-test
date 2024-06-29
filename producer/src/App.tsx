@@ -22,11 +22,9 @@ function App() {
       default:
         setColor('black')
     }
-
   }
 
   return (
-
     <div className={styles.container}>
       <button onClick={() => changeColor()}>change</button>
       <div className={styles.text} style={{ color: color }}> Hello from the other side </div>
