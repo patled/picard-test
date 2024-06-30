@@ -11,6 +11,13 @@ export default defineConfig({
       exposes: {
         'App': './src/App',
       },
-    })],
-  
+      shared: ["react"],
+    }    
+  )],
+  build: {
+    modulePreload: false,
+    target: "esnext",
+    minify: false,
+    cssCodeSplit: false,
+  },
 })
