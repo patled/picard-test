@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Picard.js Static Page Example</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script src="https://cdn.jsdelivr.net/npm/picard-js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/picard-js"></script> -->
+ <script src="https://unpkg.com/picard-js"></script>
 </head>
 <body>
   <div class="jumbotron text-center">
@@ -21,7 +22,7 @@
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
       </div>
       <div class="col-sm-4">
-        <pi-component name="App" source="mf:simplehtml@http://localhost:6789/assets/remoteEntry.js"></pi-component>
+        <!-- <pi-component name="App" source="mf:simplehtml@http://localhost:6789/assets/remoteEntry.js"></pi-component> -->
 
         <pi-component name="App" source="http://localhost:6789/assets/remoteEntry.js" kind="module"></pi-component>
 
