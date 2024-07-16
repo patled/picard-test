@@ -11,7 +11,7 @@ export default defineConfig({
       exposes: {
         'App': './src/App',
       },
-      shared: ["react"],
+      shared: ["react", "react-dom"],
     }    
   )],
   build: {

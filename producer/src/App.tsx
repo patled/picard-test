@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from './App.module.css'
 
-function App() {
+function RemoteApp() {
   const [color, setColor] = useState('black')
 
   function changeColor() {
@@ -32,4 +32,4 @@ function App() {
   )
 }
 
-export default App
+export default RemoteApp
