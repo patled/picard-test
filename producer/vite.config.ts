@@ -9,7 +9,7 @@ export default defineConfig({
       name: 'producer',
       filename: 'remoteEntry.js',
       exposes: {
-        'App': './src/App',
+        'RemoteApp': './src/App',
       },
       shared: ["react", "react-dom"],
     }    
